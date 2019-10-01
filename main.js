@@ -1,12 +1,12 @@
 let pipes=[];
 let bird;
 let spaceBetween = 125;
-let distanceBetweenPipes = 200;
+let distanceBetweenPipes = 400;
 const minPipeSize = 20;
-const maxPipeSize = 200;
+const maxPipeSize = 600;
 const pipeCount = 4;
 const gravity = 0.1;
-const pipeWidth = 40;
+const pipeWidth = 80;
 let pipeImage;
 let backgroundImage;
 let birdImage;
@@ -21,7 +21,7 @@ function preload()
 
 function setup()
 {
-  createCanvas(400,400);
+  createCanvas(800,800);
   imageMode(CENTER);
   rectMode(CENTER)
   textAlign(CENTER);
@@ -32,6 +32,7 @@ function setup()
 
 function draw()
 {
+  let a = 5;
   imagemoveX+=1;
   image(backgroundImage, 0, 0, width*2, height*2, imagemoveX%(backgroundImage.width-width), 0, width, height);
 

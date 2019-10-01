@@ -18,10 +18,6 @@ class Animation
     this.position=position;
     this.nextFrame.begin.x=((this.nextFrame.begin.x+this.frameSize.x)%(this.frameSize.x*this.numberOfFrames));
   }
-  setFramesPerRow(count)
-  {
-    this.framesPerRow = count;
-  }
   show()
   {
     image(this.texture, this.position.x, this.position.y,

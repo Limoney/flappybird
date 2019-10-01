@@ -8,8 +8,8 @@ class Bird
     this.height = 40;
     this.velocity=0;
     this.acceleration=0;
-    this.animation = new Animation(10,birdImage);
-    this.animation.scale=0.1;
+    this.animation = new Animation(14,birdImage);
+    this.animation.scale=0.4;
   }
 
   applyForce(force)
